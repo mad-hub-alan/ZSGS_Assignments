@@ -18,7 +18,7 @@ class Employee{
         this.salary = salary;
     }
 
-    // I'm overriding toString() method to print object's state.
+    // I'm overriding toString() method to print state of the object.
     @Override
     public String toString() {
         return " Emp_Name : "+this.name+"\n Emp_Id : "+this.empId+"\n Department : "+this.department+"\n Salary : "+this.salary;

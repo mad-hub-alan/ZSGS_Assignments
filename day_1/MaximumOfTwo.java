@@ -9,7 +9,7 @@ public class MaximumOfTwo {
         System.out.println("Enter Second Number :");
         int secondNumber = in.nextInt();
 
-        int greatestNumber = firstNumber > secondNumber ? firstNumber : secondNumber;
+        int greatestNumber = firstNumber > secondNumber ? firstNumber : secondNumber; //check
 
         System.out.println("Maximum Number : "+greatestNumber);
 

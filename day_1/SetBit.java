@@ -15,12 +15,12 @@ public class SetBit {
     public static String findSetBit(int number){
         if(number == 0) return "No Set Bit exist. Because Number is Zero!";
 
-        int count = 1;
+        int count = 1; 
 
         while(true){
             if((number & 1) == 1) return "Set Bit of the given number is "+"'"+count+"'";
-            number = number >> 1;
-            count++;
+            number = number >> 1; // eliminating last bit
+            count++; // increment count
         }
     }
 }
