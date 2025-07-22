@@ -1,3 +1,5 @@
+package pattern_printing;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,6 +19,7 @@ public class PascalTriangle{
         scan.close();
     }
 
+    // Pattern Logic
     public static List<List<Integer>> makePascalTriangle(int rows){
         List<List<Integer>> pascalTriangle = new ArrayList<>();
             int row = 0;
