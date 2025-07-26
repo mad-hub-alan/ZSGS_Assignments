@@ -52,13 +52,13 @@ public class Store {
 
     public static void displayStoreDetails(int hour){
 
-        System.out.println("-------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------------------------");
         if(hour >= 0 && hour < 12) System.out.print("Good morning User!");
         else if(hour >= 12 && hour < 15) System.out.print("Good Afternoon User!");
         else if(hour >= 15 && hour < 18) System.out.print("Good Evening User!"); 
         else System.out.print("\t Good Night User! \t\t");
         System.out.printf("\t Welcome to %s, %s ! \n",storeName,storeLocation);
-        System.out.println("-------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------------------------");
     }
 
     public static void endGreetings(){
