@@ -2,7 +2,6 @@ public class MyString{
 
     char[] chars;
 
-
     // constructor for String input
     public MyString(String str){
         this.chars = str.toCharArray();
@@ -23,7 +22,7 @@ public class MyString{
         return res;
     }
 
-    // length method
+    // length() method
     public int length(){
         int count = 0;
         for(char c : chars){
@@ -53,7 +52,7 @@ public class MyString{
     }
 
     // toUpperCase() method
-    public String toUpperCase(){
+    public MyString toUpperCase(){
         char[] temp = new char[this.chars.length];
         for(int i=0; i<temp.length; i++){
             temp[i] = this.chars[i];
@@ -64,11 +63,10 @@ public class MyString{
                 temp[i] = (char)(temp[i]-32);   
             }
         }
-        MyString lower = new MyString(temp);
-        return lower.toString();
+        return new MyString(temp);
     }
     // toLowerCase() method
-    public String toLowerCase(){
+    public MyString toLowerCase(){
         char[] temp = new char[this.chars.length];
         for(int i=0; i<temp.length; i++){
             temp[i] = this.chars[i];
@@ -79,26 +77,25 @@ public class MyString{
                 temp[i] = (char)(temp[i]+32); 
             }
         }
-        MyString upper = new MyString(temp);
-        return upper.toString();
+        return new MyString(temp);
     }
 
     // substring() method
-    public String substring(int beg, int end){
+    public MyString substring(int beg, int end){
         String sub = "";
         try{
-            if(beg == end) return sub; // edge case
+            if(beg == end) return new MyString(sub); // edge case
             for(int i = beg; i<end; i++){
                 sub += this.chars[i]; // concatinating subString chars
             }
         }catch(StringIndexOutOfBoundsException ex){
             ex.printStackTrace();
         }
-        return sub;
+        return new MyString(sub);
     }
 
     // concat() method
-    public String concat(MyString str){
+    public MyString concat(MyString str){
         String res = "";
         for(int i=0; i<this.chars.length; i++){
             res += this.chars[i];
@@ -106,7 +103,7 @@ public class MyString{
         for(int i=0; i<str.chars.length; i++){
             res += str.chars[i];
         }
-        return res;
+        return new MyString(res);
     }
 
     // contains() method
@@ -134,7 +131,7 @@ public class MyString{
     }
     
     // replace() method
-    public String replace(char pc, char nc){
+    public MyString replace(char pc, char nc){
         String res = "";
         char[] temp = new char[this.chars.length];
 
@@ -145,7 +142,7 @@ public class MyString{
             if(temp[i] == pc) temp[i] = nc;
             res += temp[i];
         }
-        return res;
+        return new MyString(res);
     }
 }
 

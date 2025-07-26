@@ -1,43 +1,31 @@
 package calculator_using_inheritance;
 
-public class BasicCalculator {
+public class ScientificCalculator extends AdvancedCalculator{
+    // sin() method
+    protected double sin(double num){
+        return Math.sin(num);
+    }
 
-    // add() method
-    protected long add(int num1, int num2){
-        return num1+num2;
+    // cos() method
+    protected double cos(double num){
+        return Math.cos(num);
     }
-    // add() method (overloaded)
-    protected double add(double num1, double num2){
-        return num1+num2;
+
+    // tan() method
+    protected double tan(double num){
+        return Math.tan(num);
     }
-    // subtract() method
-    protected long subtract(int num1, int num2){
-        return num1-num2;
+
+    // log() method
+    protected double log(double num){
+        return Math.log(num);
     }
-    // subtract() method (overloaded)
-    protected double subtract(double num1, double num2){
-        return num1-num2;
+
+    // exp() method
+    protected double exp(double num){
+        return Math.exp(num);
     }
-    // multiply() method
-    protected long multiply(int num1, int num2){
-        return num1*num2;
-    }
-    // multiply() method (overloaded)
-    protected double multiply(double num1, double num2){
-        return num1*num2;
-    }
-    // divide() method
-    protected long divide(int divident, int divisor){
-        return divident/divisor;
-    }
-    // divide() method (overloaded)
-    protected double divide(double divident, double divisor){
-        return divident/divisor;
-    }
-    
 }
-
-
 
 
 

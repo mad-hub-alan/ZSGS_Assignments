@@ -2,6 +2,7 @@ package calculator_using_inheritance;
 
 public class AdvancedCalculator extends BasicCalculator{
     
+    // power() method
     protected long power(int base, int exponent){
         long result = 1;
 
@@ -9,6 +10,53 @@ public class AdvancedCalculator extends BasicCalculator{
             result *= base;
         }
         return result;
+    }
+
+    // modulus() method
+    protected int modulus(int num1, int num2){
+        return (num1-(num1/num2)*num2);
+    }
+
+    // absolute() method
+    protected int absolute(int num){
+        return num < 0 ? (-1 * num) : num;
+    }
+
+    // squareRoot() method
+    protected double squareRoot(double num){
+        double x = num;           // Initial guess
+        double epsilon = 1e-10;      // Desired accuracy
+        double root;
+
+        while (true) {
+            root = 0.5 * (x + num / x); // Newton-Raphson formula
+            if (Math.abs(root - x) < epsilon) // Close enough
+                break;
+            x = root; // Update guess
+        }
+        return root;
+    }
+
+    protected double squareRootManual(double num){
+        double perfectSquare = getPerfectSquare(num);
+        System.out.println("In method....");
+        System.out.println("PerfectSquare"+perfectSquare);
+        double approximateDecimal = perfectSquare+((num - (perfectSquare*perfectSquare))/(perfectSquare*2));
+        System.out.println("Approximate decimal"+approximateDecimal);
+
+        double result = approximateDecimal + ((num - (approximateDecimal*approximateDecimal))/(2*approximateDecimal));
+        return result;
+    }
+
+    public static double getPerfectSquare(double num){
+        double perfect = 0;
+        System.out.println("in perfect Square");
+        for(int i=0; i<=num; i++){
+            System.out.println(i*i);
+            if(i*i <= num) perfect = i;
+            else return perfect;
+        }
+        return -1;
     }
 }
 
