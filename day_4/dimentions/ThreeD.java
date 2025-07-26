@@ -25,6 +25,6 @@ public class ThreeD extends TwoD{
 
     @Override
     public String toString() {
-        return "ThreeD : \n x=" + x + ",\n y=" + y + ",\n z=" + z  ;
+        return "ThreeD : [x = " + x + ", y = " + y + ", z = " + z +"]";
     }
 }
