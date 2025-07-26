@@ -87,9 +87,9 @@ class TVS extends Bike{
 
     @Override
     public String toString() {
-        return "TVS [mileage=" + mileage + ", no_of_cylinders=" + no_of_cylinders + ", price=" + price
-                + ", no_of_gears=" + no_of_gears + ", coolingType=" + coolingType + ", wheelType=" + wheelType
-                + ", fuelTankSize=" + fuelTankSize + ", makeType=" + makeType + "]";
+        return "TVS Bike : \n mileage=" + mileage + ",\n no_of_cylinders=" + no_of_cylinders + ",\n price=" + price
+                + ",\n no_of_gears=" + no_of_gears + ",\n coolingType=" + coolingType + ",\n wheelType=" + wheelType
+                + ",\n fuelTankSize=" + fuelTankSize + ",\n makeType=" + makeType ;
     }
     
 }
@@ -112,9 +112,9 @@ class Bajaj extends Bike{
 
     @Override
     public String toString() {
-        return "Bajaj [mileage=" + mileage + ", no_of_cylinders=" + no_of_cylinders + ", price=" + price
-                + ", no_of_gears=" + no_of_gears + ", coolingType=" + coolingType + ", wheelType=" + wheelType
-                + ", fuelTankSize=" + fuelTankSize + ", makeType=" + makeType + "]";
+        return "Bajaj Bike : \n mileage=" + mileage + ",\n no_of_cylinders=" + no_of_cylinders + ",\n price=" + price
+                + ",\n no_of_gears=" + no_of_gears + ",\n coolingType=" + coolingType + ",\n wheelType=" + wheelType
+                + ",\n fuelTankSize=" + fuelTankSize + ",\n makeType=" + makeType ;
     }
 
 }

@@ -74,9 +74,9 @@ class Audi extends Car{
 
     @Override
     public String toString() {
-        return "Audi [mileage=" + mileage + ", ownershipCost=" + ownershipCost + ", price=" + price + ", warranty="
-                + warranty + ", seatingCapacity=" + seatingCapacity + ", fuelType=" + fuelType + ", modelType="
-                + modelType + "]";
+        return "Audi Car : \n mileage=" + mileage + ",\n ownershipCost=" + ownershipCost + ",\n price=" + price + ",\n warranty="
+                + warranty + ",\n seatingCapacity=" + seatingCapacity + ",\n fuelType=" + fuelType + ",\n modelType="
+                + modelType ;
     }
 
 }
@@ -98,9 +98,9 @@ class Ford extends Car{
 
     @Override
     public String toString() {
-        return "Ford [mileage=" + mileage + ", ownershipCost=" + ownershipCost + ", price=" + price + ", warranty="
-                + warranty + ", seatingCapacity=" + seatingCapacity + ", fuelType=" + fuelType + ", modelType="
-                + modelType + "]";
+        return "FordCar : \n mileage=" + mileage + ",\n ownershipCost=" + ownershipCost + ",\n price=" + price + ",\n warranty="
+                + warranty + ",\n seatingCapacity=" + seatingCapacity + ",\n fuelType=" + fuelType + ",\n modelType="
+                + modelType ;
     }
 
 }
