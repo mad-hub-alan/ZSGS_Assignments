@@ -31,8 +31,8 @@ public class BasicCalculator {
         return divident/divisor;
     }
     // divide() method (overloaded)
-    protected double divide(double divident, double divisor){
-        return divident/divisor;
+    protected long divide(double divident, double divisor){
+        return (long)(divident/divisor);
     }
     
 }
