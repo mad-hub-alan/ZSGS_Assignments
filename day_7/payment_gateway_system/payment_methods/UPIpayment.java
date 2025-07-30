@@ -1,0 +1,10 @@
+package payment_gateway_system.payment_methods;
+
+import payment_gateway_system.PaymentMethod;
+
+public class UPIpayment implements PaymentMethod{
+    @Override
+    public void makePayment() {
+        System.out.println("Payment done through UPI!");
+    }
+}
