@@ -13,7 +13,7 @@ public class TicketBookingApp {
         System.out.println("Press '2' for book Train Ticket");
         System.out.println("Press '3' for book Flight Ticket \n");
     
-        System.out.println("Enter your Choise : ");
+        System.out.println("Enter your Choice : ");
         int mode = scan.nextInt();
         
         switch (mode) {
