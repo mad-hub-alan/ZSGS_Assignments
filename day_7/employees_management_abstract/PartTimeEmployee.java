@@ -12,29 +12,47 @@ public class PartTimeEmployee extends Employee{
         this.workHourPerDay = workHourPerDay;
         this.payPerHour = payPerHour;
     }
+    public PartTimeEmployee(){
+        super();
+        this.setEmployeeId();
+        this.setPayPerHour();
+        this.setWorkHourPerDay();
+        this.setWorkedDays();
+    }
+    
+    public int getEmployeeId() {
+        return employeeId;
+    }
+    public void setEmployeeId() {
+        this.employeeId = (int)(3200000+Math.ceil(Math.random()*100));
+    }
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
+    }
 
     public int getWorkedDays() {
         return workedDays;
     }
-
-    public void setWorkedDays(int workedDays) {
-        this.workedDays = workedDays;
+    public void setWorkedDays() {
+        this.workedDays = (int)(22+Math.ceil(Math.random()*4));
     }
 
     public int getWorkHourPerDay() {
         return workHourPerDay;
     }
-
-    public void setWorkHourPerDay(int workHourPerDay) {
-        this.workHourPerDay = workHourPerDay;
+    public void setWorkHourPerDay() {
+        this.workHourPerDay = 4;
     }
 
     public double getPayPerHour() {
         return payPerHour;
     }
-
-    public void setPayPerHour(double payPerHour) {
-        this.payPerHour = payPerHour;
+    public void setPayPerHour() {
+        this.payPerHour = 250;
     }
 
     @Override

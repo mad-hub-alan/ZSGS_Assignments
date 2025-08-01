@@ -37,8 +37,12 @@ public class PaymentGatewayDemo {
             System.out.println("Please Try Again and Enter Valid Option!");
             return;
         }
+
+        System.out.print("Enter the amount to transfer: ");
+        double amount = scan.nextDouble();
+        System.out.println();
         
-        myPayment.makePayment();    // calling method with polymorphic reference
+        myPayment.makePayment(amount);    // calling method with polymorphic reference
         
         System.out.println("\n----------------------- Have a nice day! ------------------\n");
         

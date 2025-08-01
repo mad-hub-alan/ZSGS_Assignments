@@ -4,7 +4,8 @@ import payment_gateway_system.PaymentMethod;
 
 public class UPIpayment implements PaymentMethod{
     @Override
-    public void makePayment() {
-        System.out.println("Payment done through UPI!");
+    public void makePayment(double amount) {
+        System.out.println("Payment done!");
+        System.out.println('₹'+amount+" Transferred through UPI.");
     }
 }
