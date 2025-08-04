@@ -43,7 +43,6 @@ public class Book {
     }
 
     // I just overrided the Object Class' toString method to return Boook instance's details. 
-
     @Override
     public String toString() {
         return String.format(" Title  : %s \n Author : %s \n ISBN   : %d \n Pages  : %d \n\n",this.title,this.author,this.ISBN,this.pages);

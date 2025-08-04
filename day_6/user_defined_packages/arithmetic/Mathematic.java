@@ -1,4 +1,4 @@
-package day_6.user_defined_packages.arithmetic;
+package user_defined_packages.arithmetic;
 
 public class Mathematic {
     public static int add(int a, int b){

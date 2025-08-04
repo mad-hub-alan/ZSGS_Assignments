@@ -1,4 +1,4 @@
-package day_6.user_defined_packages.stringutils;
+package user_defined_packages.stringutils;
 
 public class StringUtility {
     public static int length(String str){

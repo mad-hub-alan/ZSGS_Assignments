@@ -1,8 +1,8 @@
-package day_6.user_defined_packages;
+package user_defined_packages;
 
 // ----------import statements---------
-import day_6.user_defined_packages.arithmetic.Mathematic;
-import day_6.user_defined_packages.stringutils.StringUtility;
+import user_defined_packages.arithmetic.Mathematic;
+import user_defined_packages.stringutils.StringUtility;
 
 public class PackagesDemo {
     public static void main(String[] args) {
