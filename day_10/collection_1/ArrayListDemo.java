@@ -18,7 +18,7 @@ import java.util.Collections;
     j. to shuffle elements in an array colours.
  */
 
-public class ArraycoloursDemo {
+public class ArrayListDemo {
     public static void main(String[] args) {
         ArrayList<String> colours = new ArrayList<>(); // creating a Arraycolours instance
 
