@@ -36,7 +36,7 @@ public class HashMapDemo {
         System.out.println("hashMap : "+hashMap);
         
 
-        // associate key-value pairs
+        // count the number of key-value (size) mappings in a map.
         System.out.println("\n----------------------------------2---------------------------------\n");
         System.out.println("Number of Key-Value pairs in 'hashMap' : "+hashMap.size());
         

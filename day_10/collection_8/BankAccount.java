@@ -45,7 +45,8 @@ public class BankAccount {
     }
 
     public void showNewBalance(){
-        System.out.printf("\n Your new Balance after apply interest is : Rs.%.2f \n\n",calculateInterest());
+        System.out.printf("\n Your interest for this Year is : Rs.%.2f \n",calculateInterest());
+        System.out.printf("\n Your new Balance after apply interest is : Rs.%.2f \n\n",calculateInterest()+this.balance);
     }
     
 }
