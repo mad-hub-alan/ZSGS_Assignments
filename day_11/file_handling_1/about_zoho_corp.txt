@@ -1,0 +1,34 @@
+
+                    ABOUT ZOHO CORPORATION
+                   ************************
+
+
+# Zoho Corporation is a privately held Indian multinational 
+technology company headquartered in Chennai, Tamil Nadu.
+
+# It was founded in 1996 by Sridhar Vembu 
+and Tony Thomas, originally as AdventNet Inc.
+
+# Zoho specializes in SaaS (Software as a Service) products 
+for businesses, offering 50+ cloud-based applications.
+
+# Its most notable suite is Zoho One, an all-in-one 
+business operating system covering CRM, HR, finance, support, etc.
+
+# Zoho CRM is widely used by enterprises for 
+customer relationship management and automation.
+
+# The company serves over 100 million users globally 
+and competes with Salesforce, Microsoft, and Google Workspace.
+
+# Zoho maintains a strong philosophy of no external funding 
+and data privacy — no ads, no tracking.
+
+# It runs Zoho Schools of Learning, an alternative 
+to formal education that _trains and hires rural youth_.
+
+# Zoho operates major offices in India 
+(Tenkasi, Chennai), USA, Japan, UAE, and Mexico.
+
+# As of 2025, Zoho continues to grow with a focus on R&D, 
+rural talent development, and innovation-first culture.
