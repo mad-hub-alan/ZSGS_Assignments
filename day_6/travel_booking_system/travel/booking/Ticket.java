@@ -1,4 +1,4 @@
-package day_6.travel_booking_system.travel.booking;
+package travel_booking_system.travel.booking;
 
 public class Ticket {
     private int ticketId;

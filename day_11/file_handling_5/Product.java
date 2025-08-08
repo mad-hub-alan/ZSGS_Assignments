@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 
 public class Product implements Serializable {
-    // private static final long serialVersionUID = 1L;
 
     private int productId;
     private String name;
@@ -18,13 +17,25 @@ public class Product implements Serializable {
         this.quantity = quantity;
     }
 
-    public int getProductId() { return productId; }
-    public String getName() { return name; }
-    public double getPrice() { return price; }
-    public int getQuantity() { return quantity; }
+    public int getProductId() { 
+        return productId; 
+    }
+    public String getName() {
+         return name; 
+        }
+    public double getPrice() { 
+        return price; 
+    }
+    public int getQuantity() { 
+        return quantity; 
+    }
 
-    public void setPrice(double price) { this.price = price; }
-    public void setQuantity(int quantity) { this.quantity = quantity; }
+    public void setPrice(double price) {
+        this.price = price; 
+    }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
     @Override
     public String toString() {

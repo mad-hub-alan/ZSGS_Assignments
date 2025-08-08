@@ -1,8 +1,8 @@
-package day_6.travel_booking_system.travel.user;
+package travel_booking_system.travel.user;
 
 import java.util.Scanner;
 
-import day_6.travel_booking_system.travel.booking.Ticket;
+import travel_booking_system.travel.booking.Ticket;
 
 public class User {
     private static Scanner scan = new Scanner(System.in);

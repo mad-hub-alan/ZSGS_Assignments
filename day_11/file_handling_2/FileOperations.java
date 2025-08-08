@@ -130,7 +130,7 @@ public class FileOperations {
 
                 System.out.print("\n\n Enter line number to modify: ");
                 int lineNumber = sc.nextInt();
-                sc.nextLine(); // consume newline
+                sc.nextLine(); 
                 if (lineNumber < 1 || lineNumber > lines.size()) {
                     System.out.println("\n Invalid line number.");
                     return;

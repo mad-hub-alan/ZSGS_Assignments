@@ -1,27 +1,30 @@
 package banking_system;
 
 public class Customer {
-    String customerName;
-    long aadhar;
-    String PAN;
-    long contactNumber;
-    String dateOfBirth;
+    private String customerName;
+    private long aadhar;
+    private String PAN;
+    private long contactNumber;
+    private String dateOfBirth;
+    private String password;
 
     public Customer(String customerName, String customerID, long aadhar, String PAN, long contactNumber,
-            String dateOfBirth) {
+            String dateOfBirth,String password) {
         this.customerName = customerName;
         this.aadhar = aadhar;
         this.PAN = PAN;
         this.contactNumber = contactNumber;
         this.dateOfBirth = dateOfBirth;
+        this.password = password;
     }
 
-    public Customer(String customerName) {
+    public Customer(String customerName, String password) {
         this.setCustomerName(customerName);
         this.setAadhar();
         this.setContactNumber();
         this.setPAN();
         this.setDateOfBirth();
+        this.setPassword(password);
     }
 
     public String getCustomerName() {
@@ -69,16 +72,22 @@ public class Customer {
 
         this.dateOfBirth = day+"-"+month+"-"+year;
     }
+    public void setPassword(String password){
+        this.password = password;
+    }
+    public String getPassword(){
+        return this.password;
+    }
 
     //method
 
     public void printCustomerDetails(){
         System.out.println("-----------------Customer Details--------------------");
-        System.out.println("Customer Name : "+this.customerName);
-        System.out.println("Customer DOB : "+this.dateOfBirth);
+        System.out.println("Customer Name   : "+this.customerName);
+        System.out.println("Customer DOB    : "+this.dateOfBirth);
         System.out.println("Customer Aadhar : "+this.aadhar);
-        System.out.println("Customer PAN : "+this.PAN);
-        System.out.println("Contact Number : "+this.contactNumber);
+        System.out.println("Customer PAN    : "+this.PAN);
+        System.out.println("Contact Number  : "+this.contactNumber);
         System.out.println("----------------------------------------------------");
     }
 

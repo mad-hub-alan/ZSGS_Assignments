@@ -1,34 +1,21 @@
 package banking_system;
 
-import java.util.Scanner;
 
 public abstract class RBI {
-    private Scanner scan = new Scanner(System.in);
-    public final double minimumInterest = 5; 
-    public final double maximumWithdrawal = 50000.0; 
-    public final double minimumBalance = 1000.0; 
+    public static final double minimumInterest = 5; 
+    public static final double maximumWithdrawal = 50000.0; 
+    public static final double minimumBalance = 1000.0; 
 
-    protected Account acc;  // Account instance - (Has-A relationship)
+    protected Account account;  // Account instance - (Has-A relationship)
+    protected Customer customer;  // Customer instance - (Has-A relationship)
 
-    public RBI(Account acc){
-        this.acc = acc;
-    }
-    public RBI(){
-        
+    public RBI(Account account, Customer customer) {
+        this.account = account;
+        this.customer = customer;
     }
 
     //abstract methods
     public abstract double getInterestRate();
     public abstract double getWithdrawalLimit();
-    public abstract double getMinimumBalance();
 
-    public void createAccount(){
-        System.out.print("Enter Customer Name : ");
-        Customer customer = new Customer(scan.nextLine());
-        acc = new Account();
-        
-        acc.setAccountBalance(scan.nextDouble());
-        acc.setCustomer(customer);
-        acc.setAccountNumber();
-    }
 }
