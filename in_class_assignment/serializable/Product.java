@@ -7,6 +7,7 @@ public class Product implements Serializable{
     String productName;
     int quantity;
     double price;
+    
 
     public Product(int productId, String productName, int quantity, double price) {
         this.productId = productId;
@@ -14,4 +15,9 @@ public class Product implements Serializable{
         this.quantity = quantity;
         this.price = price;
     }    
+
+    @Override
+    public String toString() {
+        return String.format(" Product ID : %d \n Product Name : %s \n Quantity : %d \n Price : %.2f \n",this.productId,this.productName,this.quantity,this.price);
+    }
 }

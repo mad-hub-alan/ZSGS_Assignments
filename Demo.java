@@ -3,5 +3,3 @@ public class Demo {
         
     }
 }
-
-Thread
